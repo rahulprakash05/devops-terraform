@@ -7,7 +7,7 @@ variable "instance_types" {
 resource "aws_instance" "ec2_instances" {
     count           =   length(var.instance_types)
     instance_type   =   element(var.instance_types, count.index)
-    ami             =   "ami-0889a44b331db0194"
+    ami             =   "ami-0c7217cdde317cfec"
     availability_zone   =   "us-east-1a"
     tags = {
         Name = "terra-c3-${count.index + 1}"
