@@ -1,7 +1,7 @@
 vpc_cidr_block = "10.0.0.0/16"
 lc_name = "my-lc"
-ami_id = "ami-0646513672e4fb341"
-instance_type = "t2.micro"
+ami_id = "ami-0a3c3a20c09d6f377"
+instance_type = "t2.medium"
 user_data = <<-EOF
             #!/bin/bash
             yum update -y
